@@ -13,7 +13,7 @@ function LoginCtrl(User, CurrentUserService, $state) {
       CurrentUserService.getUser();
       $state.go('usersIndex');
     }, err => {
-      console.log(err);
+      console.log(err, 'error in login controller');
     });
   };
 }

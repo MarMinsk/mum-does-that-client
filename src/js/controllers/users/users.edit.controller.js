@@ -2,8 +2,8 @@ angular
 .module('MarketApp')
 .controller('UsersEditCtrl', UsersEditCtrl);
 
-UsersEditCtrl.$inject = ['$stateParams', '$state', 'User'];
-function UsersEditCtrl($stateParams, $state, User) {
+UsersEditCtrl.$inject = ['User', '$stateParams', '$state' ];
+function UsersEditCtrl(User, $stateParams, $state) {
   const vm    = this;
 
   vm.user     = User.get($stateParams);

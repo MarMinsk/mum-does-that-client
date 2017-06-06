@@ -2,7 +2,6 @@ angular
   .module('MarketApp')
   .controller('UsersDeleteCtrl', UsersDeleteCtrl);
 
-
 UsersDeleteCtrl.$inject = ['user', '$state'];
 function UsersDeleteCtrl(user, $state) {
   var vm = this;
