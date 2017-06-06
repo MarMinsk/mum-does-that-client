@@ -1,34 +1,37 @@
-{{ vm.user }}
-
 <div class="container">
-  <div class="userShowPage">
-    <div class="userShowMain">
-      <div class="row">
-        <div class="col-md-6">
-          <img ng-src="{{ vm.user.image }}">
-        </div>
-        <div class="col-md-6">
-          <div class="userShowInfo">
-            <h2 class="showName">{{ vm.user.name }}</h2>
-            <div class="contactOwnerButton">
-              <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-md-6">
+      <img ng-src="{{ vm.user.image }}">
+    </div>
+    <div class="col-md-6">
+      <h2>{{ vm.user.first_name }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="">
+        <h3>About: {{ vm.user.username }}</h3>
+        <p>{{ vm.user.bio }}</p>
+        <p>{{ vm.user.usename }}</p>
+        <p>{{ vm.user.first_name }}</p>
+        <p>{{ vm.user.last_name }}</p>
+        <p>{{ vm.user.twitter }}</p>
+        <p>{{ vm.user.company_name }}</p>
+        <p>{{ vm.user.company_logo }}</p>
+        <p>{{ vm.user.company_website }}</p>
+      </div>
+      <div class="">
+        <h2>User's Skills:</h2>
+
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="userShowDesc">
-          <h3>About {{ vm.user.username }}:</h3>
-          <p>{{ vm.user.bio }}</p>
-        </div>
+    <div class="col-md-6">
+      <div class="">
+        <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
       </div>
-      <div class="col-md-6">
-        <div class="showBackButton">
-          <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
-        </div>
+      <div class="">
+        <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
       </div>
     </div>
   </div>
-</div>
 </div>

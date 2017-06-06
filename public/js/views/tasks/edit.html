@@ -1,0 +1,24 @@
+<div class="container">
+
+    <h1> Update a task</h1>
+
+      <form name="vm.editTaskForm" ng-submit="vm.update()" method="put" novalidate>
+
+        <div class="form-group">
+        <label for="task">Task</label><br>
+          <input class="form-control" type="text" name="task" ng-model="vm.task.task" placeholder="Task" required>
+        </div>
+
+        <div class="form-group">
+        <label for="description">Description</label><br>
+          <input class="form-control" type="text" name="description" ng-model="vm.task.description" placeholder="Description" required>
+        </div>
+
+        <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button>
+
+        <input class="btn btn-primary" type="submit" value="Update"/>
+
+        <button type="button" class="btn btn-danger deleteButton" ng-click="vm.user">Delete</button>
+
+      </form>
+</div>

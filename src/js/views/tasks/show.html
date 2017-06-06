@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="">
+        <h3>Task posted by: {{ vm.user.username }}</h3>
+        <img ng-src="{{ vm.user.company_logo }}">
+        <p>{{ vm.user.company_name }}</p>
+        <p>{{ vm.user.company_website }}</p>
+        <p>{{ vm.task.task}}</p>
+        <p>{{ vm.task.description}}</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="">
+        <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact Task Owner</button>
+      </div>
+      <div class="">
+        <button type="button" name="back" class="btn btn-info" ui-sref="tasksIndex">Return to Available Tasks</button>
+      </div>
+    </div>
+  </div>
+</div>

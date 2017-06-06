@@ -1,26 +1,21 @@
 <div class="container">
-
-  <!-- <h1>Users list</h1>
+<!-- <div class="row ">
+  <h1>Users list</h1>
   <ul>
   <li ng-repeat="user in vm.users track by $index">{{ user.username }}</li>
   <li ng-repeat="user in vm.users track by $index">{{ user.bio }}</li>
-</ul> -->
-
+</ul>
+</div> -->
 <div class="row">
   <h2>Users near you</h2>
   <div ng-repeat="user in vm.users">
     <div class="col-md-4 col-s-6">
-      <img class="userIndexImage" ng-src="{{user.image}}" ui-sref="userShow({ id: user._id })">
-      <h4><a class="userIndexName" ui-sref="usersShow({ id: user._id })">{{ user.username }}</a></h4>
-      <div class=""><a ui-sref="usersShow({ id: user._id })">{{ user.bio }}</a>
+      <img class="" ng-src="{{user.image}}" ui-sref="userShow({ id: user._id })">
+      <h4><a class="" ui-sref="usersShow({ id: user._id })">{{ user.username }}</a></h4>
+      <div class="">
+        <!-- <a ui-sref="usersShow({ id: user._id })"></a> -->
+        <p>{{ user.bio}}</p>
       </div>
-      {{ user }}
-      {{ user.usename }}
-      {{ user.first_name }}
-      {{ user.last_name }}
-      {{ user.twitter }}
-      {{ user.company_name }}
-      {{ user.company_logo }}
     </div>
   </div>
 </div>

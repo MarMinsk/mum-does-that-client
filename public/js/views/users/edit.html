@@ -1,0 +1,74 @@
+<div class="container userEditPage">
+
+    <h1> Update your profile</h1>
+
+      <form name="vm.editUserForm" ng-submit="vm.update()" method="put" novalidate>
+
+        <div class="form-group">
+        <label for="username">Username</label><br>
+          <input class="form-control" type="text" name="username" ng-model="vm.user.username" placeholder="{{vm.username}}" required>
+        </div>
+
+        <div class="form-group">
+        <label for="first_name">First Name</label><br>
+          <input class="form-control" type="text" name="first_name" ng-model="vm.user.first_name" placeholder="{{vm.first_name}}" required>
+        </div>
+
+        <div class="form-group">
+        <label for="last_name">Last Name</label><br>
+          <input class="form-control" type="text" name="last_name" ng-model="vm.user.last_name" placeholder="{{vm.last_name}}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Email</label><br>
+          <input class="form-control" type="email" name="email" ng-model="vm.user.email" placeholder="eg: name@name.com..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image</label><br>
+          <input class="form-control" type="text" name="image" ng-model="vm.user.image" placeholder="Image" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label><br>
+          <input class="form-control" type="text" name="bio" ng-model="vm.user.bio" placeholder="Bio" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label><br>
+          <input class="form-control" type="text" name="location" ng-model="vm.user.location" placeholder="eg: London, Bristol..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="linkedin">LinkedIn</label><br>
+            <input class="form-control" type="text" name="linkedin" ng-model="vm.user.linkedin" placeholder="LinkedIn" required>
+        </div>
+
+        <div class="form-group">
+            <label for="twitter">Twitter</label><br>
+            <input class="form-control" type="text" name="twitter" ng-model="vm.user.twitter" placeholder="Twitter" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company_name">Company Name</label><br>
+            <input class="form-control" type="text" name="company_name" ng-model="vm.user.company_name" placeholder="Company Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company_website">Company Website</label><br>
+            <input class="form-control" type="text" name="company_website" ng-model="vm.user.company_website" placeholder="Company Website" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company_logo">Company Logo</label><br>
+            <input class="form-control" type="text" name="company_logo" ng-model="vm.user.company_logo" placeholder="Company Logo" required>
+        </div>
+
+        <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button>
+
+        <input class="btn btn-primary" type="submit" value="Update" />
+
+        <button type="button" class="btn btn-danger deleteButton" ng-click="vm.user">Delete</button>
+
+      </form>
+</div>
