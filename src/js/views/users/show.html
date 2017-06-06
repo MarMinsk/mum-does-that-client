@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="userShowPage">
+    <div class="userShowMain">
+      <div class="row">
+        <div class="col-md-6">
+          <img ng-src="{{ vm.user.image }}">
+        </div>
+        <div class="col-md-6">
+          <div class="userShowInfo">
+            <h2 class="showName">{{ vm.user.name }}</h2>
+            <div class="contactOwnerButton">
+              <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="userShowDesc">
+          <h3>About {{ vm.user.username }}:</h3>
+          <p>{{ vm.user.bio }}</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="showBackButton">
+          <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

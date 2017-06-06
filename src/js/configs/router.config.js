@@ -1,6 +1,6 @@
 angular
-  .module('MarketApp')
-  .config(Router);
+.module('MarketApp')
+.config(Router);
 
 Router.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'];
 function Router($stateProvider, $locationProvider, $urlRouterProvider){
@@ -40,7 +40,32 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     templateUrl: '/js/views/users/edit.html',
     controller: 'UsersEditCtrl',
     controllerAs: 'vm'
-  });
+  })
+  .state('tasksIndex', {
+    url: '/tasks',
+    templateUrl: '/js/views/tasks/index.html',
+    controller: 'TaskIndexCtrl',
+    controllerAs: 'vm'
+  })
+  .state('tasksNew', {
+    url: '/tasks/new',
+    templateUrl: '/js/views/tasks/new.html',
+    controller: 'TaskNewCtrl',
+    controllerAs: 'vm'
+  })
+  .state('tasksEdit', {
+    url: '/tasks/:id/edit',
+    templateUrl: '/js/views/tasks/edit.html',
+    controller: 'TasksEditCtrl',
+    controllerAs: 'vm'
+  })
+  .state('tasksShow', {
+    url: '/tasks/:id',
+    templateUrl: '/js/views/tasks/show.html',
+    controller: 'TasksShowCtrl',
+    controllerAs: 'vm'
+  })
+;
 
   $urlRouterProvider.otherwise('/');
 }
