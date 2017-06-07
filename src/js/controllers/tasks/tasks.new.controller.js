@@ -1,12 +1,12 @@
 angular
 .module('MarketApp')
-.controller('TaskNewCtrl', TaskNewCtrl);
+.controller('TasksNewCtrl', TaskNewCtrl);
 
 TaskNewCtrl.$inject = ['Task', '$state'];
 
 function TaskNewCtrl (Task, $state) {
   const vm = this;
-  vm.create= taskCreate;
+  vm.create = taskCreate;
   function taskCreate(){
     Task
       .save(vm.task)

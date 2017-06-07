@@ -1,11 +1,11 @@
 <div class="container">
 
     <h1> Add a task</h1>
-      <form name="vm.editTaskForm" ng-submit="vm.update()" method="put" novalidate>
+      <form name="vm.createTaskForm" ng-submit="vm.create()" novalidate>
 
         <div class="form-group">
         <label for="task">Task</label><br>
-          <input class="form-control" type="text" name="task" ng-model="vm.task.task" placeholder="Task" required>
+          <input class="form-control" type="text" name="task" ng-model="vm.task.name" placeholder="Task" required>
         </div>
         <div class="form-group">
         <label for="description">Description</label><br>
@@ -14,7 +14,7 @@
 
         <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button>
 
-        <input class="btn btn-primary" type="submit" value="Update"/>
+        <input class="btn btn-primary" type="submit" value="Create"/>
 
       </form>
 </div>

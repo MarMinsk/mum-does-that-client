@@ -4,24 +4,21 @@
       <img ng-src="{{ vm.user.image }}">
     </div>
     <div class="col-md-6">
-      <h2>{{ vm.user.first_name }}</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6">
       <div class="">
-        <h3>About: {{ vm.user.username }}</h3>
+        <h2>About {{ vm.user.first_name }}</h2>
         <p>{{ vm.user.bio }}</p>
-        <p>{{ vm.user.usename }}</p>
-        <p>{{ vm.user.first_name }}</p>
-        <p>{{ vm.user.last_name }}</p>
+        <p>{{ vm.user.location }}</p>
         <p>{{ vm.user.twitter }}</p>
         <!-- <p>{{ vm.user.company_name }}</p>
         <p>{{ vm.user.company_logo }}</p>
         <p>{{ vm.user.company_website }}</p>
       </div> -->
       <div class="">
-        <h2>User's Skills:</h2>
+        <h2>{{vm.user.first_name}}'s Skills:</h2>
 
       </div>
     </div>

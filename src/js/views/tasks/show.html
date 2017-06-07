@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col-md-6">
       <div class="">
-        <h3>Task posted by: {{ vm.user.username }}</h3>
-        <img ng-src="{{ vm.user.company_logo }}">
-        <p>{{ vm.user.company_name }}</p>
-        <p>{{ vm.user.company_website }}</p>
-        <p>{{ vm.task.task}}</p>
+        <h3>Task posted by: {{ vm.task.user.username }}</h3>
+        <img ng-src="{{vm.task.user.image }}">
+        <p>{{ vm.task.user.company_name }}</p>
+        <p>{{ vm.task.user.company_website }}</p>
+        <p>{{ vm.task.name}}</p>
         <p>{{ vm.task.description}}</p>
       </div>
     </div>
