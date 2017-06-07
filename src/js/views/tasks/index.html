@@ -3,8 +3,9 @@
   <div class="row">
     <h2>Tasks Currently Available</h2>
     <div ng-repeat="task in vm.tasks">
-      <div class="col-4" ui-sref="usersShow({ id: task._id })">{{ task.task }}</div>
-      <div class="col-8" ui-sref="usersShow({ id: task._id })">{{ task.description }}</div>
+      <!-- ._id for mongo and .id for postgres db -->
+      <div class="col-4" ui-sref="usersShow({ id: task.id })">{{ task.task }}</div>
+      <div class="col-8" ui-sref="usersShow({ id: task.id })">{{ task.description }}</div>
     </div>
   </div>
 

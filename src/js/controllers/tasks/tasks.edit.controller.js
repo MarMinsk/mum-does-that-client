@@ -15,7 +15,7 @@ function TasksEditCtrl(Task, $stateParams, $state) {
       .update({ id: $stateParams.id }, vm.task)
       .$promise
       .then(task => {
-        $state.go('tasksShow', { id: task._id });
+        $state.go('tasksShow', { id: task.id });
       });
 
   }

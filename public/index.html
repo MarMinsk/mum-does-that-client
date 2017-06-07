@@ -42,6 +42,9 @@
               <a ui-sref="tasksIndex">Tasks</a>
             </li>
             <li ng-show="main.user">
+              <a ui-sref="usersEdit({id:main.user.id})">Edit Profile</a>
+            </li>
+            <li ng-show="main.user">
               <a ng-click="main.logout()">Logout</a>
             </li>
           </ul>

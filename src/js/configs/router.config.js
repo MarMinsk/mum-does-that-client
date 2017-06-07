@@ -44,13 +44,13 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   .state('tasksIndex', {
     url: '/tasks',
     templateUrl: '/js/views/tasks/index.html',
-    controller: 'TaskIndexCtrl',
+    controller: 'TasksIndexCtrl',
     controllerAs: 'vm'
   })
   .state('tasksNew', {
     url: '/tasks/new',
     templateUrl: '/js/views/tasks/new.html',
-    controller: 'TaskNewCtrl',
+    controller: 'TasksNewCtrl',
     controllerAs: 'vm'
   })
   .state('tasksEdit', {

@@ -10,10 +10,10 @@
   <h2>Users near you</h2>
   <div ng-repeat="user in vm.users">
     <div class="col-md-4 col-s-6">
-      <img class="" ng-src="{{user.image}}" ui-sref="userShow({ id: user._id })">
-      <h4><a class="" ui-sref="usersShow({ id: user._id })">{{ user.username }}</a></h4>
+      <img class="" ng-src="{{user.image}}" ui-sref="userShow({ id: user.id })">
+      <h4><a class="" ui-sref="usersShow({ id: user.id })">{{ user.username }}</a></h4>
       <div class="">
-        <!-- <a ui-sref="usersShow({ id: user._id })"></a> -->
+        <!-- <a ui-sref="usersShow({ id: user.id })"></a> -->
         <p>{{ user.bio}}</p>
       </div>
     </div>
