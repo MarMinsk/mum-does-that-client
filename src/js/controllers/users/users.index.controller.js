@@ -47,5 +47,7 @@ function UsersIndexCtrl(User, Skill) {
       // Sort by the highest skillMatch count
       return nextUser.skillMatch - prevUser.skillMatch;
     });
+
+
   };
 }

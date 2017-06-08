@@ -1,35 +1,40 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12 img-container">
       <img class="userShowImage" ng-src="{{ vm.user.image }}">
     </div>
-    <div class="col-md-6">
-    </div>
   </div>
+
   <div class="row">
     <div class="col-md-6">
-      <div class="">
-        <h2>About {{ vm.user.first_name }}</h2>
-        <p>{{ vm.user.bio }}</p>
-        <p>{{ vm.user.location }}</p>
-        <p>{{ vm.user.twitter }}</p>
-        <!-- <p>{{ vm.user.company_name }}</p>
-        <p>{{ vm.user.company_logo }}</p>
-        <p>{{ vm.user.company_website }}</p>
-      </div> -->
-      <div class="">
-        <h2>{{ vm.user.first_name }}'s Skills:</h2>
-        <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="">
-        <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
-      </div>
-      <div class="">
-        <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
-      </div>
-    </div>
+
+      <h4><a ui-sref="({ id: user.id.twitter })">{{ user.id.twitter }}</a></h4>
+
+      <h2>About {{ vm.user.first_name }}</h2>
+      <p>{{ vm.user.bio }}</p>
+      <p>{{ vm.user.location }}</p>
+      <p><a href="https://twitter.com/{{ vm.user.twitter}}" target="_blank">{{ vm.user.twitter }}</a></p>
+      <p>{{ vm.user.linkedin}}</p>
+      <!-- <p>{{ vm.user.company_name }}</p>
+      <p>{{ vm.user.company_logo }}</p>
+      <p>{{ vm.user.company_website }}</p>
+    </div> -->
+  </div>
+  <div class="col-md-6">
+    <h2>{{ vm.user.first_name }}'s Skills:</h2>
+    <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
+  </div>
+
+</div>
+
+<div class="col-md-12">
+  <div class="">
+    <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
+  </div>
+  <div class="">
+    <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
   </div>
 </div>
+
+
 </div>
