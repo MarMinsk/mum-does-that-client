@@ -65,6 +65,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'TasksShowCtrl',
     controllerAs: 'vm'
   })
+  .state('usersContact', {
+    url: '/users/:id/contact',
+    templateUrl: '/js/views/users/contact.html',
+    controller: 'UsersContactCtrl',
+    controllerAs: 'vm'
+  })
 ;
 
   $urlRouterProvider.otherwise('/');

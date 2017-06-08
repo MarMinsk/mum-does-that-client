@@ -14,7 +14,7 @@
       <p>{{ vm.user.bio }}</p>
       <p>{{ vm.user.location }}</p>
       <p><a href="https://twitter.com/{{ vm.user.twitter}}" target="_blank">{{ vm.user.twitter }}</a></p>
-      <p>{{ vm.user.linkedin}}</p>
+      <p><a ng-href="{{ vm.user.linkedin}}" target="_blank">LinkedIn Profile</a></p>
       <!-- <p>{{ vm.user.company_name }}</p>
       <p>{{ vm.user.company_logo }}</p>
       <p>{{ vm.user.company_website }}</p>
@@ -27,14 +27,16 @@
 
 </div>
 
-<div class="col-md-12">
-  <div class="">
-    <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact this user</button>
+<div class="row">
+  <div class="col-md-6">
+    <div class="showContactButton">
+      <button type="button" name="contact" class="btn btn-info" ui-sref="contactUser">Contact {{ vm.user.first_name }}</button>
+    </div>
   </div>
-  <div class="">
-    <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
+  <div class="col-md-6">
+    <div class="showBackButton">
+      <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
+    </div>
   </div>
 </div>
-
-
 </div>

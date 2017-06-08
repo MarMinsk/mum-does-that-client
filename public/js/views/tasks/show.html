@@ -1,20 +1,28 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <div class="">
-        <h3>Task posted by: {{ vm.task.user.username }}</h3>
-        <img class="taskShowImage" ng-src="{{vm.task.user.image }}">
-        <p>{{ vm.task.user.company_name }}</p>
-        <p>{{ vm.task.user.company_website }}</p>
-        <p>{{ vm.task.name}}</p>
-        <p>{{ vm.task.description}}</p>
-      </div>
+    <div class="col-md-12 img-container">
+      <img class="userShowImage" ng-src="{{vm.task.user.image }}">
     </div>
-    <div class="col-md-6">
-      <div class="">
-        <button type="button" name="back" class="btn btn-info" ui-sref="#">Contact Task Owner</button>
+  </div>
+
+  <div class="row taskShowInfoBlock">
+  <div class="col-md-12">
+    <h4>Task posted by {{ vm.task.user.first_name }}</h4>
+    <!-- <p>Company: {{ vm.task.user.company_name }}</p> -->
+    <h3><a ng-href="{{ vm.task.user.company_website }}" target="_blank">{{ vm.task.user.company_name }}</a></h3>
+    <h2>{{ vm.task.name}}</h2>
+    <h5>{{ vm.task.description}}</h5>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="showContactButton">
+      <button type="button" name="contact" class="btn btn-info" ui-sref="#">Contact {{ vm.task.user.first_name }}</button>
+    </div>
       </div>
-      <div class="">
+    <div class="col-md-6">
+      <div class="showBackButton">
         <button type="button" name="back" class="btn btn-info" ui-sref="tasksIndex">Return to Available Tasks</button>
       </div>
     </div>
