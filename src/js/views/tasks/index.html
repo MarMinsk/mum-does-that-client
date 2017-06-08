@@ -1,10 +1,10 @@
 <div class="container">
+  <h2>Tasks Currently Available</h2>
   <div class="row">
     <div class="col-4">
-      <h2>Tasks Currently Available</h2>
       <div ng-repeat="task in vm.tasks">
         <!-- ._id for mongo and .id for postgres db -->
-        <img class="" ng-src="{{task.user.company_logo}}" ui-sref="userShow({ id: user.id })">
+        <img class="taskIndexImage" ng-src="{{task.user.company_logo}}" ui-sref="userShow({ id: user.id })">
         <div class="col-8">
           <a class="" ui-sref="tasksShow({ id: task.id })">
             <h4>{{ task.name }}</h4>
@@ -16,5 +16,4 @@
   </div>
   <!-- <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button> -->
   <button type="button" class="btn btn-info" ui-sref="tasksNew">Add Task</button>
-</div>
 </div>
