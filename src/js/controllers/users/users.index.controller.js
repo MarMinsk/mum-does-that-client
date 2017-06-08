@@ -21,6 +21,10 @@ function UsersIndexCtrl(User, Skill) {
   };
 
   vm.decreaseSkillCount = () => {
+    vm.selectedSkills.pop();
+    if (vm.selectedSkills.length === 0) {
+      vm.users = User.query();
+    }
     vm.skillCount--;
   };
 
