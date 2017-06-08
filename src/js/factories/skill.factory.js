@@ -4,7 +4,7 @@ angular
 
 SkillFactory.$inject = ['API', '$resource'];
 function SkillFactory(API, $resource){
-  return $resource(`${API}/tasks/:id`, { id: '@_id'}, {
+  return $resource(`${API}/skills/:id`, { id: '@_id'}, {
     'update': { method: 'PUT' }
   });
 }

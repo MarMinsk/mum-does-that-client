@@ -1,22 +1,40 @@
 <div class="container">
-<!-- <div class="row ">
-  <h1>Users list</h1>
-  <ul>
-  <li ng-repeat="user in vm.users track by $index">{{ user.username }}</li>
-  <li ng-repeat="user in vm.users track by $index">{{ user.bio }}</li>
-</ul>
-</div> -->
-<div class="row">
-  <h2 class="userIndexHeader">Mums near you</h2>
-  <div ng-repeat="user in vm.users">
-    <div class="col-md-4 col-s-6">
-      <img class="userIndexImage" ng-src="{{user.image}}" ui-sref="userShow({ id: user.id })">
-      <h4><a class="userIndexName" ui-sref="usersShow({ id: user.id })">{{ user.username }}</a></h4>
-      <div class="">
-        <!-- <a ui-sref="usersShow({ id: user.id })"></a> -->
-        <p>{{ user.bio}}</p>
+
+  <!-- <ul>
+    <li ng-repeat="skill in vm.skills track by $index">{{ skill.skill }}</li>
+  </ul> -->
+
+  <form class="form-horizontal clearfix">
+    <div class="form-group" ng-repeat="i in vm.numberOfSkills(vm.skillCount) track by $index">
+      <select class="form-control" ng-model="vm.selectedSkills[$index]" ng-options="skill.id as skill.skill for skill in vm.skills" ng-change="vm.runFilter()">
+        <option value="">Please select a skill</option>
+      </select>
+        {{ vm.selectedSkill }}
+    </div>
+
+    <div class="actions">
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-default" disabled>Filter by Skill</button>
+        <button type="button" ng-click="vm.decreaseSkillCount()" class="btn btn-danger">Remove skill</button>
+        <button type="button" ng-click="vm.increaseSkillCount()" class="btn btn-primary">Add skill</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+    <h2 class="userIndexHeader">Mums near you</h2>
+    <div ng-repeat="user in vm.users">
+      <div class="col-md-4 col-s-6">
+        <img class="userIndexImage" ng-src="{{user.image}}" ui-sref="userShow({ id: user.id })">
+        <div>
+          <span class="label label-primary" ng-repeat="skill in user.skills track by $index">{{ skill.skill }}</span>
+        </div>
+        <h4><a class="userIndexName" ui-sref="usersShow({ id: user.id })">{{ user.username }}</a></h4>
+        <div class="">
+          <!-- <a ui-sref="usersShow({ id: user.id })"></a> -->
+          <p>{{ user.bio}}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
