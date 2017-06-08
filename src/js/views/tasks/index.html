@@ -5,6 +5,7 @@
     <div ng-repeat="task in vm.tasks">
       <!-- ._id for mongo and .id for postgres db -->
       <div class="col-4">
+        <img class="" ng-src="{{user.company_logo}}" ui-sref="userShow({ id: user.id })">
         <a class="" ui-sref="tasksShow({ id: task.id })">
           <h4>{{ task.name }}</h4>
         </a>
