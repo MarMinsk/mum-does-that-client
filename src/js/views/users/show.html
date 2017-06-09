@@ -30,7 +30,8 @@
 <div class="row">
   <div class="col-md-6">
     <div class="showContactButton">
-      <button type="button" name="contact" class="btn btn-info" ui-sref="contactUser">Contact {{ vm.user.first_name }}</button>
+      <!-- <button type="button" name="contact" class="btn btn-info"><a href="mailto:{{vm.user.email}}"></a>Contact {{ vm.user.first_name }}</button> -->
+      <a href="mailto:vm.user.email">Contact {{ vm.user.first_name }}</a>
     </div>
   </div>
   <div class="col-md-6">
