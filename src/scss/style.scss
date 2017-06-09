@@ -1,11 +1,20 @@
 // Import all of your scss files here
 
+@import "homePage";
 @import "image_styles";
-@import "userIndexPage";
-@import "userShowPage";
 @import "taskShowPage";
 @import "taskIndexPage";
+@import "userIndexPage";
+@import "userShowPage";
 
 .logoBox {
   border: 1px solid silver
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+nav, p {
+  font-size: 16px;
 }
