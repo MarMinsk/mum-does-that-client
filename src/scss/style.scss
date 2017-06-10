@@ -1,11 +1,14 @@
 // Import all of your scss files here
 
+@import "buttons";
 @import "homePage";
 @import "image_styles";
+@import "loginRegisterPage";
 @import "taskShowPage";
 @import "taskIndexPage";
 @import "userIndexPage";
 @import "userShowPage";
+
 
 .logoBox {
   border: 1px solid silver

@@ -28,7 +28,7 @@
         <img class="userIndexImage" ng-src="{{user.image}}" ui-sref="userShow({ id: user.id })">
         <h4><a class="userIndexName" ui-sref="usersShow({ id: user.id })">{{ user.username }}</a></h4>
         <div>
-          <span class="label label-primary skillLabel" ng-repeat="skill in user.skills track by $index">{{ skill.skill }}</span>
+          Skills: <span class="label label-primary skillLabel" ng-repeat="skill in user.skills track by $index">{{ skill.skill }}</span>
         </div>
         <div class="">
           <p>{{ user.bio}}</p>

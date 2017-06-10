@@ -1,6 +1,6 @@
 <div class="container login">
 
-  <h1>Register</h1>
+  <h1 class="loginHeader">Join Mum Does That</h1>
   <form ng-submit="vm.register()">
     <div class="form-group">
       <input class="form-control" type="text" name="username" ng-model="vm.user.username" placeholder="Username">
@@ -20,7 +20,10 @@
     <div class="form-group">
       <input class="form-control" type="password" name="passwordConfirmation" ng-model="vm.user.password_confirmation" placeholder="Password confirmation">
     </div>
-    <input class="btn btn-primary" type="submit" value="Submit" />
+    <div class="form-group">
+    <p>By registering you agree to our <a href="#">Terms</a></p>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Sign Up" />
   </form>
 
 
