@@ -1,6 +1,6 @@
 .btn.btn-primary {
   background-color: orange;
-  border-color: silver;
+  border-color: orange;
   color: #fff;
 }
 .btn.btn-primary:hover {
@@ -10,7 +10,7 @@
 
 .btn.btn-danger {
   background-color: #58B09C;
-  border-color: silver;
+  border-color: #58B09C;
   color: #fff;
 }
 .btn.btn-danger:hover {
@@ -19,6 +19,15 @@
 }
 .skillLabel {
   background-color: #58B09C;
-  border-color: silver;
+  border-color: #58B09C;
   color: #fff;
+}
+.btn.btn-info {
+  background-color: gold;
+  border-color: gold;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: silver;
+  border-color: silver;
 }

@@ -24,11 +24,11 @@
   <div class="row">
     <h2 class="userIndexHeader">Mums near you</h2>
     <div ng-repeat="user in vm.users">
-      <div class="col-md-4 col-s-6">
+      <div class="col-md-4 col-s-6 userIndexList">
         <img class="userIndexImage" ng-src="{{user.image}}" ui-sref="userShow({ id: user.id })">
         <h4><a class="userIndexName" ui-sref="usersShow({ id: user.id })">{{ user.username }}</a></h4>
         <div>
-          Skills: <span class="label label-primary skillLabel" ng-repeat="skill in user.skills track by $index">{{ skill.skill }}</span>
+          <p><strong>Skills:</strong> <span class="label label-primary skillLabel" ng-repeat="skill in user.skills track by $index">{{ skill.skill }}</span> </p>
         </div>
         <div class="">
           <p>{{ user.bio}}</p>
