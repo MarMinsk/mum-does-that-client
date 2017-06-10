@@ -1,43 +1,39 @@
-<div class="container">
+<div class="container userShowPage">
   <div class="row">
     <div class="col-md-12 img-container">
-      <img class="userShowImage" ng-src="{{ vm.user.image }}">
+      <h2 class="userIndexHeader">About {{ vm.user.first_name }}</h2>
     </div>
   </div>
-
   <div class="row">
     <div class="col-md-6">
-
-      <h4><a ui-sref="({ id: user.id.twitter })">{{ user.id.twitter }}</a></h4>
-
-      <h2>About {{ vm.user.first_name }}</h2>
-      <p>{{ vm.user.bio }}</p>
-      <p>{{ vm.user.location }}</p>
-      <p><a href="https://twitter.com/{{ vm.user.twitter}}" target="_blank">{{ vm.user.twitter }}</a></p>
-      <p><a ng-href="{{ vm.user.linkedin}}" target="_blank">LinkedIn Profile</a></p>
+      <!-- <h4><a ui-sref="({ id: user.id.twitter })">{{ user.id.twitter }}</a></h4> -->
+      <!-- <h2>About {{ vm.user.first_name }}</h2> -->
+      <img class="userShowImage" ng-src="{{ vm.user.image }}">
+    </div>
+    <div class="col-md-6">
+      <p class="userShowBio">{{ vm.user.bio }}</p>
+      <p><img src="../images/placeholder.png" alt="location" class="userShowIcon"> {{ vm.user.location }}</p>
+      <p><img src="../images/twitter-small.png" alt="twitter" class="userShowIcon"> <a href="https://twitter.com/{{ vm.user.twitter}}" target="_blank">{{ vm.user.twitter }}</a></p>
+      <p><img src="../images/linkedin-small.png" alt="linkedin" class="userShowIcon"><a ng-href="{{ vm.user.linkedin}}" target="_blank">  {{ vm.user.first_name }}'s profile</a></p>
+      <p><img src="../images/contact-small.png" alt="email" class="userShowIcon"><a href="mailto:vm.user.email">Contact {{ vm.user.first_name }}</a></p>
       <!-- <p>{{ vm.user.company_name }}</p>
       <p>{{ vm.user.company_logo }}</p>
-      <p>{{ vm.user.company_website }}</p>
-    </div> -->
-  </div>
-  <div class="col-md-6">
-    <h2>{{ vm.user.first_name }}'s Skills:</h2>
-    <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
-  </div>
-
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="showContactButton">
-      <!-- <button type="button" name="contact" class="btn btn-info"><a href="mailto:{{vm.user.email}}"></a>Contact {{ vm.user.first_name }}</button> -->
-      <a href="mailto:vm.user.email">Contact {{ vm.user.first_name }}</a>
+      <p>{{ vm.user.company_website }}</p> -->
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="showBackButton">
-      <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
+  <div class="row">
+    <div>
+      <div class="col-md-6">
+        <h2>{{ vm.user.first_name }}'s Skills:</h2>
+        <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
+        <!-- <div class="showContactButton">
+        <button type="button" name="contact" class="btn btn-info"><a href="mailto:{{vm.user.email}}"></a>Contact {{ vm.user.first_name }}</button> -->
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="showBackButton">
+        <button type="button" name="back" class="btn btn-info" ui-sref="usersIndex">Return to User Index</button>
+      </div>
     </div>
   </div>
-</div>
 </div>
