@@ -31,23 +31,43 @@
   font-size: 24px;
 }
 #section-1 {
-  background-image: url("http://timesofindia.indiatimes.com/photo/52758139.cms");
-  height: 500px;
+  background-image: url("https://www.mamicadeingeras.com/wp-content/uploads/2016/11/mom-on-computer.jpg");
+  height: 600px;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 
 }
-#section-3 {
-  background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/09/11/102990130-GettyImages-497324247.530x298.jpg?v=1441994086");
-  background-size: cover;
-  height: 500px;
-  opacity: 0.8;
+#section-1-words {
+  padding-left: 450px;
+  padding-top: 200px;
+  font-size: 30px;
+  color: orange;
 }
-#section-5 {
-  background-image: url("https://zipshipit.com/wp-content/uploads/2016/02/image_001.png");
+
+#section-3 {
+  background-image: url("http://cdn.sheknows.com/articles/2010/09/new-mom-with-baby-shopping-online.jpg");
   background-size: cover;
-  height: 500px;
-  opacity: 0.8;
+  height: 600px;
+  opacity: 0.9;
+}
+#section-3-words {
+  padding-right: 450px;
+  padding-top: 220px;
+  font-size: 36px;
+  color: orange;
+}
+
+#section-5 {
+  background-image: url("https://we-explore.com/content/images/momanddaughteroncomputer.jpg");
+  background-size: cover;
+  height: 600px;
+  opacity: 0.9;
+}
+#section-5-words {
+  padding-right: 600px;
+  padding-top: 210px;
+  font-size: 36px;
+  color: orange;
 }
 #section-7 {
   background-color: orange;
