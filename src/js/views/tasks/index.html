@@ -14,14 +14,14 @@
   </div>
 </div> -->
 
-<div class="container">
+<div class="container taskIndexPage">
   <h2 class="taskIndexHeader">Tasks Currently Available</h2>
-  <div class="row ">
+  <div class="row">
     <div ng-repeat="task in vm.tasks">
       <div class="col-md-4 taskIndexImageColumn">
       <img class="taskIndexImage" ng-src="{{task.user.company_logo}}" ui-sref="userShow({ id: user.id })">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 taskIndexDescColumn">
         <!-- ._id for mongo and .id for postgres db -->
         <a ui-sref="tasksShow({ id: task.id })"><h3 class="taskName">{{ task.name }}</h3></a>
         <p>{{ task.description }}</p>
@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <div class="">
+  <div class="taskIndexAdd">
     <!-- <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button> -->
     <button type="button" class="btn btn-primary" ui-sref="tasksNew">Add a Task</button>
   </div>

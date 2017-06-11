@@ -23,9 +23,14 @@ nav, p, li {
 }
 
 a {
-  color: black;
+  color: grey;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .navbar {
   background-color: #9BDEAC;
+
 }
