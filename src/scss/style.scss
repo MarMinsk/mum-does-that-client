@@ -32,11 +32,11 @@ a:hover {
 
 .navbar {
   background-color: #FAF0CA;
-  border: 0;
+  border: 1px gold dotted;
 
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
     background-color: orange;
     color: white;
 }

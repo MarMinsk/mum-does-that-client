@@ -35,6 +35,7 @@
   height: 500px;
   background-size: cover;
   opacity: 0.8;
+
 }
 #section-3 {
   background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/09/11/102990130-GettyImages-497324247.530x298.jpg?v=1441994086");
@@ -61,5 +62,7 @@
   height: 50px;
 }
 .aboutText {
-  font: grey;
+  color: grey;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
