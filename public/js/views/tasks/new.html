@@ -5,11 +5,11 @@
 
         <div class="form-group">
         <label for="task">Task</label><br>
-          <input class="form-control" type="text" name="task" ng-model="vm.task.name" placeholder="Task" required>
+          <input class="form-control" type="text" name="task" ng-model="vm.task.name" placeholder="e.g. Designing a logo, Review of new employment contract terms, Help with HMRC tax return submission" required>
         </div>
         <div class="form-group">
         <label for="description">Description</label><br>
-          <input class="form-control" type="text" name="description" ng-model="vm.task.description" placeholder="Description" required>
+          <input class="form-control" type="text" name="description" ng-model="vm.task.description" placeholder="Please provide as much detail as possible about the task you need completed" required>
         </div>
 
         <button type="button" name="back" class="btn btn-info" ui-sref="usersShow({ id: vm.user._id })">Back</button>

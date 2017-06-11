@@ -6,8 +6,6 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <!-- <h4><a ui-sref="({ id: user.id.twitter })">{{ user.id.twitter }}</a></h4> -->
-      <!-- <h2>About {{ vm.user.first_name }}</h2> -->
       <img class="userShowImage" ng-src="{{ vm.user.image }}">
     </div>
     <div class="col-md-6">
@@ -19,13 +17,13 @@
       <!-- <p>{{ vm.user.company_name }}</p>
       <p>{{ vm.user.company_logo }}</p>
       <p>{{ vm.user.company_website }}</p> -->
+      <h2 class="userShowSkills">{{ vm.user.first_name }}'s Skills:</h2>
+      <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
     </div>
   </div>
   <div class="row">
     <div>
       <div class="col-md-6">
-        <h2>{{ vm.user.first_name }}'s Skills:</h2>
-        <li ng-repeat="skill in vm.user.skills track by $index">{{ skill.skill }}</li>
         <!-- <div class="showContactButton">
         <button type="button" name="contact" class="btn btn-info"><a href="mailto:{{vm.user.email}}"></a>Contact {{ vm.user.first_name }}</button> -->
       </div>
