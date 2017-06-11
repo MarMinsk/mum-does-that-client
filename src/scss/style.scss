@@ -10,9 +10,9 @@
 @import "userShowPage";
 
 
-.logoBox {
-  border: 1px solid silver
-}
+// .logoBox {
+//   border: 1px solid silver
+// }
 
 body {
   font-family: 'Dosis', sans-serif;
@@ -31,6 +31,21 @@ a:hover {
 }
 
 .navbar {
-  background-color: #9BDEAC;
+  background-color: #FAF0CA;
+  border: 0;
 
 }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: orange;
+    color: white;
+}
+
+// .fixed-top {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   bottom: 0;
+//   z-index: 1030;
+// }
