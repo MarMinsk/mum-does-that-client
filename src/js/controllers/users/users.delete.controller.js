@@ -10,6 +10,7 @@ function UsersDeleteCtrl(user, $state) {
   function usersDelete() {
     vm.user
       .$remove()
+      .$promise
       .then(() => {
         $state.go('home');
       });

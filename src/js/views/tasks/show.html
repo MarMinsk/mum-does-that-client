@@ -10,7 +10,7 @@
     </div>
 
     <div class="col-md-6">
-      <h2>{{ vm.task.name }}</h2>
+      <h2 class="taskShowName">{{ vm.task.name }}</h2>
       <p>{{ vm.task.description }}</p>
       <h3><img src="../images/browser-small.png" alt="website" class="userShowIcon"><a ng-href="{{ vm.task.user.company_website }}" target="_blank">{{ vm.task.user.company_name }}</a></h3>
       <p><img src="../images/user-small.png" alt="user profile" class="userShowIcon">View {{ vm.task.user.first_name }}'s
@@ -20,6 +20,7 @@
     </div>
     <div class="row">
       <div class="col-md-6">
+        <button type="button" class="btn btn-danger deleteButton" ng-click="vm.delete">Delete</button>
       </div>
       <div class="col-md-6">
         <div class="showBackButton">

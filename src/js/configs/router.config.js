@@ -65,10 +65,10 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'TasksShowCtrl',
     controllerAs: 'vm'
   })
-  .state('usersContact', {
-    url: '/users/:id/contact',
-    templateUrl: '/js/views/users/contact.html',
-    controller: 'UsersContactCtrl',
+  .state('tasksDelete', {
+    url: '/tasks/:id',
+    templateUrl: '/js/views/tasks/show.html',
+    controller: 'TasksDeleteCtrl',
     controllerAs: 'vm'
   })
 ;

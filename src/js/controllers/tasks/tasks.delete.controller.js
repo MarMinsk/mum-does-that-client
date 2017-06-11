@@ -2,18 +2,20 @@ angular
   .module('MarketApp')
   .controller('TasksDeleteCtrl', TasksDeleteCtrl);
 
-TasksDeleteCtrl.$inject = ['task', '$state'];
-function TasksDeleteCtrl(task, $state) {
-  var vm = this;
-  vm.task = task;
+TasksDeleteCtrl.$inject = ['Task', '$state'];
+function TasksDeleteCtrl(Task, $state) {
 
-  function tasksDelete() {
+  var vm = this;
+  vm.task = Task;
+
+  function tasksDelete(task) {
+    console.log('task delete clicked');
     vm.task
-      .$remove()
+      .$remove({id: task.id})
+      .$promise
       .then(() => {
-        $state.go('home');
+        $state.go('tasksIndex');
       });
   }
-
   vm.delete = tasksDelete;
 }

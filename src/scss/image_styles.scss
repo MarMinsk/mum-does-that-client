@@ -1,72 +1,20 @@
-// .jumbotron {
-//   background-image: url("http://timesofindia.indiatimes.com/photo/52758139.cms");
-//   text-align: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   color: white;
-//   padding-bottom: 364px;
-//   opacity: 0.7;
-// }
-//
-// .container h1,h3 {
-//   color: gold;
-// }
-
-#section-1 {
-  background-image: url("http://timesofindia.indiatimes.com/photo/52758139.cms");
-  height: 500px;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#section-3 {
-  background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/09/11/102990130-GettyImages-497324247.530x298.jpg?v=1441994086");
-  background-size: cover;
-  height: 500px;
-  opacity: 0.8;
-}
-
-#section-5 {
-  background-image: url("https://zipshipit.com/wp-content/uploads/2016/02/image_001.png");
-  background-size: cover;
-  height: 500px;
-  opacity: 0.8;
-}
-
-#section-7 {
-  background-color: orange;
-  height: 120px;
-}
-
-.heart {
-  width: 100px;
-}
-
-.logo {
-  height: 50px;
-}
-
 .userIndexImage {
   width: 250px;
   height: 250px;
   border-radius: 200px;
   border: 1px grey solid;
 }
-
 .img-container {
   text-align: center;
 }
-
 .userShowImage {
   width: 300px;
   height: 300px;
+  border: 1px grey solid;
   border-radius: 15px;
   margin: 0 auto;
   text-align: center;
-
 }
-
 .taskIndexImage {
   width: 70px;
   height: 70px;
@@ -75,16 +23,13 @@
   margin-top: 12px;
   margin-left: 40px;
 }
-
 .taskShowImage {
   width: 300px;
   height: 300px;
 }
-
 .navbar {
   height: 80px;
 }
-
 .navbar-right {
   margin-top: 10px;
 }

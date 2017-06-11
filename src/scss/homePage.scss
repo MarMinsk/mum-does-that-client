@@ -5,16 +5,54 @@
   color: orange;
   padding-top: 260px;
 }
-
 .homeHeading {
   font-size: 42px;
   color: orange;
 }
-
 .homeSocial {
   margin-top: 50px;
 }
-
+.none {
+  color: white;
+}
 .homeContact {
-  display: block;
+  padding-top: 5px;
+}
+.homeCopyright {
+  color: white;
+  padding-top: 50px;
+}
+.howItWorks {
+  color: grey;
+  padding-bottom: 25px;
+}
+#section-1 {
+  background-image: url("http://timesofindia.indiatimes.com/photo/52758139.cms");
+  height: 500px;
+  background-size: cover;
+  opacity: 0.8;
+}
+#section-3 {
+  background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/09/11/102990130-GettyImages-497324247.530x298.jpg?v=1441994086");
+  background-size: cover;
+  height: 500px;
+  opacity: 0.8;
+}
+#section-5 {
+  background-image: url("https://zipshipit.com/wp-content/uploads/2016/02/image_001.png");
+  background-size: cover;
+  height: 500px;
+  opacity: 0.8;
+}
+#section-7 {
+  background-color: orange;
+  height: 120px;
+}
+
+.heart {
+  width: 100px;
+}
+
+.logo {
+  height: 50px;
 }
