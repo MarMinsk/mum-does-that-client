@@ -1,3 +1,10 @@
+.logoHome {
+    position: absolute;
+    left: 380px;
+    top: 50px;
+    z-index: -1;
+    opacity: 0.4;
+}
 .homeStrap {
   text-align: center;
   font-size: 30px;
@@ -100,7 +107,7 @@
 }
 .aboutText {
   color: grey;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 
