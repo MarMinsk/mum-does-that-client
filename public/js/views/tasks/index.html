@@ -3,7 +3,7 @@
   <div class="row">
     <div ng-repeat="task in vm.tasks">
       <div class="col-md-4 taskIndexImageColumn">
-        <img class="taskIndexImage" ng-src="{{task.user.company_logo}}" ui-sref="userShow({ id: user.id })">
+      <a ng-href="{{ vm.task.user.company_website }}" target="_blank"><img class="taskIndexImage" ng-src="{{task.user.company_logo}}" ui-sref="userShow({ id: user.id })"></a>
       </div>
       <div class="col-md-8 taskIndexDescColumn">
         <!-- ._id for mongo and .id for postgres db -->
