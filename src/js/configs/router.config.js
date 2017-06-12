@@ -65,12 +65,6 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'TasksShowCtrl',
     controllerAs: 'vm'
   })
-  .state('tasksDelete', {
-    url: '/tasks/:id',
-    templateUrl: '/js/views/tasks/show.html',
-    controller: 'TasksDeleteCtrl',
-    controllerAs: 'vm'
-  })
 ;
 
   $urlRouterProvider.otherwise('/');
