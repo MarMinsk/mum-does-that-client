@@ -13,8 +13,10 @@
       <h2 class="taskShowName">{{ vm.task.name }}</h2>
       <p>{{ vm.task.description }}</p>
       <h3><img src="../images/browser-small.png" alt="website" class="userShowIcon"><a ng-href="{{ vm.task.user.company_website }}" target="_blank">{{ vm.task.user.company_name }}</a></h3>
-      <p><img src="../images/user-small.png" alt="user profile" class="userShowIcon">View {{ vm.task.user.first_name }}'s
-        <a class="userIndexName" ui-sref="usersShow({ id: task.user.id })">{{ vm.task.user.first_name }}</a> user profile</p>
+
+      <p><img src="../images/user-small.png" alt="user profile" class="userShowIcon">
+      <a class="" ui-sref="usersShow({ id: vm.task.user.id })">View {{ vm.task.user.first_name }}'s user profile</a></p>
+
         <p><img src="../images/contact-small.png" alt="email" class="userShowIcon"><a href="mailto:vm.user.email">Contact {{ vm.task.user.first_name }}</a></p>
       </div>
     </div>
