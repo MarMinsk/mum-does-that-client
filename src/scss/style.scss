@@ -27,9 +27,6 @@ a {
 a:hover {
     text-decoration: none;
 }
-.widthContainer {
-  width: 100%;
-}
 .navbar {
   background-color: #FFEE88;
   border: 1px gold dotted;
@@ -45,7 +42,12 @@ a:hover {
   height: 80px;
   margin-top: 20px;
 }
-
+.logo {
+  padding-left: 15px;
+}
+.widthContainer {
+  width: 100%;
+}
 
 // .fixed-top {
 //   position: fixed;

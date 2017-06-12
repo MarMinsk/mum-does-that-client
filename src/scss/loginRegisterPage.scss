@@ -1,13 +1,16 @@
 .login {
   max-width: 60%;
-  background-color: #FFEE88;
-  border: 2px gold dotted;
+  background-color: #f9f3c2;
+  border: 1px gold dotted;
   border-radius: 15px;
   opacity: 0.7;
 }
-
+.loginButton {
+  margin-bottom: 12px;
+}
 .loginHeader {
   color: orange;
+  text-align: center;
   font-size: 48px;
 }
 
