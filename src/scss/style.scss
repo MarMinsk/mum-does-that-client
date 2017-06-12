@@ -1,5 +1,12 @@
 // Import all of your scss files here
 
+// vw = viewport width. 100 = 100%
+// vh = viewport height.
+.widthFix {
+  width: 100vw;
+  padding: 0;
+}
+
 @import "buttons";
 @import "homePage";
 @import "image_styles";
