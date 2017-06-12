@@ -21,3 +21,12 @@
 .skillLabel {
   margin-right: 12px;
 }
+.userIndexImage {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+.userIndexImage:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}

@@ -28,6 +28,9 @@
 .taskName {
   color: orange;
 }
+.taskIndexDescColumn {
+  width: 80%;
+}
 
 .taskIndexDescColumn:hover {
   background-color: #F6F4F3;
@@ -39,6 +42,6 @@
   background-color: #FFEE88;
   border: 1px gold dotted;
   height: 80px;
-  width: 880px;
+  width: 100%;
   margin-top: 20px;
 }
