@@ -1,7 +1,7 @@
 
-#Mum Does That 
+# Mum Does That 
 
-##General Assembly WDI Project 4
+## General Assembly WDI Project 4
 
 <div style="text-align:center"><img width="285" alt="screen shot 2017-06-30 at 09 58 46" src="https://user-images.githubusercontent.com/24986945/28160851-552dca44-67b9-11e7-979e-a4313099cd1b.png"></div>
 
